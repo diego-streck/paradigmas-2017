@@ -41,10 +41,7 @@ list(filter(lambda x: x<0, [1,2,3,-5,-6,-7]))
 
 #7.Escreva uma função que receba uma lista de números e retorne somente os que estiverem entre 1 e 100, inclusive. Defina uma função auxiliar para ajudar neste exercício.
 
-def retorna1e100 (lista):
-    def intervalo(x):
-        return 1 <= x <= 100
-    return list(filter(intervalo,lista))
+list(filter(lambda x: x>0 and x<100,[1,2,99,100,-1]))
 
 #8.Escreva uma função que receba uma lista de números e retorne somente aqueles que forem pares. Defina uma função auxiliar para ajudar neste exercício.
 
