@@ -45,10 +45,7 @@ list(filter(lambda x: x>0 and x<100,[1,2,99,100,-1]))
 
 #8.Escreva uma função que receba uma lista de números e retorne somente aqueles que forem pares. Defina uma função auxiliar para ajudar neste exercício.
 
-def par (lista):
-    def epar (x):
-        return x % 2 == 0
-    return list(filter(epar,lista))
+list(filter(lambda x: x%2==0,[1,2,3,8,4]))
 
 #9.Crie uma função charFound(c,s) que verifique se o caracter c está contido na string. O resultado deve ser True ou False. Você não deve usar o operador in. 
 #Defina uma função auxiliar para ajudar neste exercício.
