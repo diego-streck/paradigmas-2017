@@ -35,10 +35,9 @@ def result(x):
 
 #6.Escreva uma função que, dada uma lista de números, retorne uma lista com apenas os que forem negativos. Defina uma função auxiliar para ajudar neste exercício.
 
-def neg (lista):
-    def nega(x):
-        return x < 0
-    return list(filter(nega,lista))
+#solução melhor:
+
+list(filter(lambda x: x<0, [1,2,3,-5,-6,-7])) 
 
 #7.Escreva uma função que receba uma lista de números e retorne somente os que estiverem entre 1 e 100, inclusive. Defina uma função auxiliar para ajudar neste exercício.
 
