@@ -28,10 +28,10 @@ def contaespaco (string):
 
 #5.Escreva uma função que, dada uma lista de números, calcule 3n*2 + 2/n + 1 para cada número n da lista. Defina uma função auxiliar para ajudar neste exercício.
 
-def calc (lista):
-    def calcu(x):
-        return ((3*x**2)+((2/x)+1))
-    return list(map(calcu,lista))
+def result(x):
+    return((3*x**2)+((2/x)+1))
+
+#testar: list(map(result,[1,2,3]))
 
 #6.Escreva uma função que, dada uma lista de números, retorne uma lista com apenas os que forem negativos. Defina uma função auxiliar para ajudar neste exercício.
 
