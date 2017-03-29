@@ -1,0 +1,87 @@
+
+Hello. I am ELIZA. How can I help you?
+> Hello, nice to meet you Eliza
+
+How do you do. Please state your problem.
+> I don't have a problem
+
+Do you not really have a problem?
+> no
+
+Are you saying no just to be negative?
+> of course no 
+
+You are being a bit negative.
+> Tell me a reason for this? 
+
+You say tell you a reason for this
+> ok. What's your name? 
+
+I am not interested in names.
+> kkk
+
+I am not sure I understand you fully.
+> Do you have a name? 
+
+I have told you before, I do not care about names.
+> oh, sorry for this, i had forgotten
+
+Please do not apologize.
+> What the news for today ?
+
+Why do you ask?
+> I am curious.
+
+Is it because you are curious that you came to me?
+> yes
+
+You seem quite positive.
+> thank you
+
+We were discussing you, not me.
+> right 
+
+Please go on.
+> ok. What is prolog? 
+
+Does that question interest you?
+> yes
+
+You are sure?
+> of course 
+
+What does that suggest to you?
+> I do no 
+
+Can you elaborate on that?
+> yes, i can 
+
+I see.
+> What is prolog? 
+
+What is it you really want to know?
+> 
+
+
+Observando a convesa com Eliza e após observando o código, podemos claramente perceber que são vários conjuntos de palavras, que 
+quando digitados pelo usuário, provocam uma resposta de Eliza, baseada na própria pergunta. 
+
+Neste trecho da minha conversa: 
+
+I have told you before, I do not care about names.
+> oh, sorry for this, i had forgotten
+que 
+Please do not apologize.
+> What the news for today ? 
+
+Ao mencionar a palavra "sorry", Eliza me da a resposta baseada em um conjunto de frases/palavras que estão "prontas".  
+
+rules([[sorry,0],[
+	[1,[_],0,
+		[please,do,not,apologize,.],
+		[apologies,are,not,necessary,.],
+		[what,feelings,do,you,have,when,you,apologize,?],
+		['I',have,told,you,that,apologies,are,not,required,.]]]]).
+
+
+A resposta que recebi, está no código de Eliza. Acho que seu funcionamento também pode ser por um método de substituição, ao que parece. 
